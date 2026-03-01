@@ -101,6 +101,13 @@ Transform waste management in GKMA through a user-friendly digital platform that
 - npm or yarn
 - Expo CLI (optional, but recommended)
 
+### Cross-platform (Windows, macOS, Linux)
+The project is set up so `npm install` works on **Windows**, **macOS**, and **Linux**. Platform-specific optional dependencies (e.g. for Metro/Expo tooling) are resolved per OS. If you see install errors about optional dependencies, create a file named `.npmrc` in the project root with:
+```ini
+optional=true
+```
+This tells npm not to fail the whole install when an optional dependency (e.g. a native binary for another OS) is skipped.
+
 ### Installation
 
 1. **Clone the repository**
